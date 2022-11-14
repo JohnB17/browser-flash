@@ -11,7 +11,7 @@
     "buildResources": "static/icons"
   },
   "files": ["build/**/*", "package.json", "static/**/*"],
-  "publish": "github",
+  "publish": "always",
   "linux": {
     "category": "Network",
     "target": [
