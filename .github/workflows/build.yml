@@ -41,3 +41,5 @@ jobs:
           #MAC_CERTS_PASSWORD: ${{ secrets.mac_certs_password }}
 
           RELEASE: ${{ contains(steps.log.outputs.message, 'bump version') }}
+      - name: Find where the files are
+        run: ls
