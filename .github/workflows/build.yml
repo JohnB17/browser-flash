@@ -28,6 +28,7 @@ jobs:
         run: yarn install --frozen-lockfile
         env:
           ADBLOCK: true
+          release: false
 
       - name: Get commit message
         run: echo "::set-output name=message::$(git log --no-merges -1 --oneline)"
